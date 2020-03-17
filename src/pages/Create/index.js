@@ -8,7 +8,7 @@ import Input from '../../components/Input';
 import Button from '../../components/Button';
 
 export default function Create({ history }) {
-  const [fist_name, setFirst_name] = useState('');
+  const [first_name, setFirst_name] = useState('');
   const [last_name, setLast_name] = useState('');
   const [user_name, setUser_name] = useState('');
   const [password, setPassword] = useState('');
@@ -18,7 +18,7 @@ export default function Create({ history }) {
     e.preventDefault();
 
     if (
-      !fist_name ||
+      !first_name ||
       !last_name ||
       !user_name ||
       !password ||
@@ -37,7 +37,7 @@ export default function Create({ history }) {
 
     try {
       const response = await api.post('/users', {
-        fist_name,
+        first_name,
         last_name,
         user_name,
         password
@@ -63,7 +63,7 @@ export default function Create({ history }) {
             name="First name"
             type="text"
             onChange={setFirst_name}
-            value={fist_name}
+            value={first_name}
           />
           <Input
             name="Last name"
