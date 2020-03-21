@@ -72,7 +72,7 @@ export default function Create({ history }) {
             value={last_name}
           />
           <Input
-            name="User_name"
+            name="Username"
             type="text"
             onChange={setUser_name}
             value={user_name}
