@@ -6,6 +6,7 @@ import { Container, MainContainer } from './styles';
 
 import Input from '../../components/Input';
 import Button from '../../components/Button';
+import BackButton from '../../components/ActionButton';
 
 export default function Create({ history }) {
   const [first_name, setFirst_name] = useState('');
@@ -57,6 +58,8 @@ export default function Create({ history }) {
 
   return (
     <Container>
+      <BackButton page="/" icon={'back'} />
+
       <MainContainer>
         <form onSubmit={e => handleSubmit(e)}>
           <Input

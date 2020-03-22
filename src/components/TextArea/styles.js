@@ -15,13 +15,15 @@ export const Container = styled.div`
     transform: translateY(-10px);
   }
 
-  input {
+  textarea {
     background: none;
     border: solid #fff 3px;
     border-radius: 16px;
-    height: 64px;
+    height: 128px;
     width: 100%;
 
-    padding: 0px 15px;
+    padding: 20px 15px;
+
+    resize: none;
   }
 `;

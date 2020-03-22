@@ -24,7 +24,7 @@ export default createGlobalStyle`
     background-repeat: no-repeat;
   }
 
-  body, input, button {
+  body, input, button, textarea {
     color: #fff;
     font-size: 14px;
 
